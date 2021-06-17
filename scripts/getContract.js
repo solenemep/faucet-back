@@ -12,6 +12,6 @@ exports.getContract = async (contractName, networkName) => {
     // If exists, do nothing
   }
   const contract = obj[contractName];
-  const contractDeployed = contract[networkName];
-  return contractDeployed;
+  const contractAddress = contract[networkName].address;
+  return contractAddress;
 };
